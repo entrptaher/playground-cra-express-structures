@@ -1,0 +1,26 @@
+{
+  "name": "mern-structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "dev": "from-env concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon index.js",
+    "build":"from-env npm run build --prefix client",
+    "client": "npm run start --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "from-env": "^1.1.2"
+  }
+}
