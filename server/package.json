@@ -11,8 +11,8 @@
   "scripts": {
     "dev": "from-env concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon index.js",
-    "build":"from-env npm run build --prefix client",
-    "client": "npm run start --prefix client"
+    "build":"from-env npm run build --prefix ../client",
+    "client": "npm run start --prefix ../client"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
